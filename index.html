@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Virtual Pet</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 id="name">Virtual Pet</h1>
+
+    <img id="petImage"
+         src="https://cdn-icons-png.flaticon.com/512/5965/5965408.png"
+         alt="pet" />
+
+    <div class="buttons">
+      <button id="feedButton" title="Alimentar">🍖</button>
+      <button id="careButton" title="Dar carinho">🐾</button>
+      <button id="playButton" title="Brincar">🎾</button>
+    </div>
+
+    <div class="stats">
+      <div>Fome <span id="feedStat">50</span></div>
+      <div>Carinho <span id="careStat">50</span></div>
+      <div>Brincar <span id="playStat">50</span></div>
+    </div>
+
+    <div class="nameSetter">
+      <input type="text" id="inputforname" placeholder="Nome do pet" />
+      <button id="submitbutton">OK</button>
+    </div>
+  </div>
+
+  <!-- POP-UP de Game Over -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <p id="popupMessage"></p>
+      <button id="restartBtn">Recomeçar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

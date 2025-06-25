@@ -1,0 +1,61 @@
+/* ——— RESET/BÁSICO ——— */
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{
+  background:#87ff87;
+  display:flex;align-items:center;justify-content:center;min-height:100vh;
+}
+
+/* ——— CASE / TELA ——— */
+.container{
+  background:#ffff00;
+  box-shadow:0 20px #ffd900;
+  border-radius:40px 40px 75px 75px;
+  width:320px;padding:30px 20px 50px;text-align:center;
+}
+h1{font-size:1.8rem;margin-bottom:12px;color:#2f2f2f}
+
+/* ——— PET IMG ——— */
+#petImage{width:160px;height:160px;object-fit:contain;margin:0 auto 18px}
+
+/* ——— BOTÕES DE AÇÃO ——— */
+.buttons button{
+  background:#1acaff;border:none;border-radius:50%;width:70px;height:70px;
+  margin:0 5px;font-size:1.2rem;cursor:pointer;
+  box-shadow:inset 0 -5px #0096c4;transition:.2s;
+}
+.buttons button:hover{background:#70deff}
+
+/* ——— STATS ——— */
+.stats{
+  display:flex;justify-content:space-around;margin-top:20px;
+  font-family:'VT323',monospace;font-size:1.2rem;color:#df2e4b;
+}
+
+/* ——— NOME DO PET ——— */
+.nameSetter{
+  margin-top:25px;display:flex;justify-content:center;gap:6px
+}
+.nameSetter input{
+  flex:1;padding:6px 8px;border:2px solid #1acaff;border-radius:6px;outline:none
+}
+.nameSetter button{
+  padding:6px 12px;background:#1acaff;border:none;border-radius:6px;
+  font-weight:bold;cursor:pointer;transition:.2s
+}
+.nameSetter button:hover{background:#70deff}
+
+/* ——— POP-UP GAME OVER ——— */
+.popup{
+  position:fixed;inset:0;background:rgba(0,0,0,.6);
+  display:flex;align-items:center;justify-content:center;
+  visibility:hidden;opacity:0;transition:.3s
+}
+.popup.show{visibility:visible;opacity:1}
+.popup-content{
+  background:#fff;padding:25px 35px;border-radius:10px;text-align:center
+}
+.popup-content button{
+  margin-top:15px;padding:6px 20px;background:#1acaff;border:none;
+  border-radius:6px;font-weight:bold;cursor:pointer;transition:.2s
+}
+.popup-content button:hover{background:#70deff}
