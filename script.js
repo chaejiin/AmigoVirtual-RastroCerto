@@ -93,10 +93,10 @@
 // updateStats();
 
 const petImages = {
-  idle : 'https://cdn-icons-png.flaticon.com/512/5965/5965408.png',
-  feed : 'https://cdn-icons-png.flaticon.com/512/990/990346.png',
-  care : 'https://cdn-icons-png.flaticon.com/512/1998/1998611.png',
-  play : 'https://cdn-icons-png.flaticon.com/512/167/167748.png'
+  idle : './img/cookie.png',
+  feed : './img/food.png',
+  care : './img/amor.png',
+  play : './img/play.png'
 };
 
 /* ---------- VARIÁVEIS ---------- */
